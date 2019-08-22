@@ -9,7 +9,7 @@ module.exports = {
     'prettier/react',
     'prettier/@typescript-eslint'
   ],
-  plugin: [
+  plugins: [
     '@typescript-eslint',
     'eslint-comments',
     'jest',

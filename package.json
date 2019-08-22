@@ -11,6 +11,8 @@
     "url": "https://github.com/maxiaochuan/mxcins-bedrcok"
   },
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "yarn pnpify tsc -p tsconfig.json",
     "prepublishOnly": "yarn build && np --no-cleanup --yolo --no-publish"

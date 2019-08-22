@@ -10,12 +10,4 @@ module.exports = {
   bracketSpacing: true,
   jsxBracketSameLine: false,
   arrowParens: 'avoid',
-  overrides: [
-    {
-      file: 'document.ejs',
-      options: {
-        parser: 'html',
-      },
-    },
-  ],
 }

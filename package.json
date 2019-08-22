@@ -11,6 +11,9 @@
     "url": "https://github.com/maxiaochuan/mxcins-bedrock"
   },
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

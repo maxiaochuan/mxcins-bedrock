@@ -1,0 +1,33 @@
+{
+  "name": "@mxcins/bedrock",
+  "version": "0.0.0",
+  "description": "eslint prettier",
+  "homepage": "https://github.com/maxiaochuan/mxcins-bedrock",
+  "bugs": {
+    "url": "https://github.com/maxiaochuan/mxcins-bedrock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxiaochuan/mxcins-bedrcok"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn pnpify tsc",
+    "prepublishOnly": "yarn build && np --no-cleanup --yolo --no-publish"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "np": "^5.0.3",
+    "typescript": "^3.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "XiaochuanMa <mxcins@gmail.com> (https://github.com/maxiaochuan)"
+  ],
+  "installConfig": {
+    "pnp": true
+  }
+}

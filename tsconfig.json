@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "esnext",
-    "lib": ["esnext"],
+    "module": "commonjs",
+    "lib": ["esnext", "dom"],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -17,6 +17,6 @@
     "declaration": true,
   },
   "exclude": [
-    "node_modules",
+    "dist",
   ]
 }

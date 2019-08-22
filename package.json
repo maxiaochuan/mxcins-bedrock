@@ -12,12 +12,25 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "yarn pnpify tsc",
+    "build": "yarn pnpify tsc -p tsconfig.json",
     "prepublishOnly": "yarn build && np --no-cleanup --yolo --no-publish"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-typescript": "^4.0.1",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-unicorn": "^10.0.0"
   },
   "devDependencies": {
+    "@berry/pnpify": "^0.1.0",
     "np": "^5.0.3",
     "typescript": "^3.5.3"
   },

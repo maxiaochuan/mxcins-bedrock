@@ -1,13 +1,16 @@
 module.exports = {
   extends: [
     'airbnb',
-    'prettier',
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
-    'plugin:eslnit-comments/recommended',
+    'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
-    'prettier/react',
-    'prettier/@typescript-eslint'
+    require.resolve('eslint-config-prettier'),
+    require.resolve('eslint-config-prettier/react'),
+    require.resolve('eslint-config-prettier/@typescript-eslint'),
+    // 'prettier',
+    // 'prettier/react',
+    // 'prettier/@typescript-eslint'
   ],
   plugins: [
     '@typescript-eslint',
@@ -31,7 +34,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'generator-star-spacing': 0,
     'function-paren-newline': 0,
-    'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
+    'import/no-unresolved': 0,
     'import/order': 'warn',
     'import/no-extraneous-dependencies': [
       2,
@@ -94,7 +97,10 @@ module.exports = {
     'operator-linebreak': 0,
     'eslint-comments/no-unlimited-disable': 1,
     'no-param-reassign': 1,
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+
+    // 2019-08-22 16:10:55 add
+    'consistent-return': 0,
   },
   settings: {
     // support import modules from TypeScript files in JavaScript files

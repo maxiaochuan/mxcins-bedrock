@@ -14,8 +14,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "yarn pnpify tsc -p tsconfig.json",
-    "prepublishOnly": "yarn build && yarn np --no-cleanup --yolo --no-publish"
+    "build": "tsc",
+    "prepublishOnly": "yarn build && np --no-cleanup --yolo --no-publish"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.0.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-unicorn": "^10.0.0"
   },
   "devDependencies": {
-    "@berry/pnpify": "^0.1.0",
+    "@types/node": "^12.7.2",
     "np": "^5.0.3",
     "typescript": "^3.5.3"
   },

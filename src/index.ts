@@ -1,8 +1,8 @@
 // const eslint = require('./esilnt');
-import eslint from './eslint';
-import prettier from './prettier';
+const eslint = require('./eslint');
+const prettier = require('./prettier');
 
-export = {
+module.exports = {
   prettier,
   eslint,
 }

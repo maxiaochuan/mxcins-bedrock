@@ -25,26 +25,6 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@berry/fslib@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@berry/fslib/-/fslib-0.1.0.tgz#a1bee7ceda37bfb5d70498f6f46dc36bd9fe9fdb"
-  integrity sha512-OJyXyCVL6BH3YOKKxjwX7hNsELzSpcCIYCCNFiyK1F6cmnJMHW8D5WJ1C7WeHvUVBgYGr8OfU46TMWCH1N7z1Q==
-  dependencies:
-    "@berry/libzip" "0.1.0"
-
-"@berry/libzip@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@berry/libzip/-/libzip-0.1.0.tgz#8a8e604420e18bdf899ce20c4a6eb54b0f8d9780"
-  integrity sha512-8QoqGoZBbin0ivDRSk+EZD/Bg3mUI8W7TSDs7DGG1qe6b87oG/G78lxqNqWcSpypbL5QXQMrQr9Hw4RDxd1gWA==
-
-"@berry/pnpify@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@berry/pnpify/-/pnpify-0.1.0.tgz#0d5421ea40cc52ed8e178fbbb77865f61da66016"
-  integrity sha512-aYmjtJ2XrOgo2uG0YuZr8tdmXmskByyMEHa+jjglKEipD8kd2z3d7KUf9908URMXjOa4d9RJmC8HtrXBjcY0Ww==
-  dependencies:
-    "@berry/fslib" "0.1.0"
-    cross-spawn "^6.0.5"
-
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -93,7 +73,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@*":
+"@types/node@*", "@types/node@^12.7.2":
   version "12.7.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.2.tgz#c4e63af5e8823ce9cc3f0b34f7b998c2171f0c44"
   integrity sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==

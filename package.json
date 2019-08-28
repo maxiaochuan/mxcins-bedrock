@@ -33,7 +33,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "eslint-plugin-unicorn": "^10.0.0"
+    "eslint-plugin-unicorn": "^10.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-css-modules": "^1.4.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
+    "stylelint-order": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^12.7.2",

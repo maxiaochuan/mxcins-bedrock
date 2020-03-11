@@ -8,9 +8,6 @@ module.exports = {
     require.resolve('eslint-config-prettier'),
     require.resolve('eslint-config-prettier/react'),
     require.resolve('eslint-config-prettier/@typescript-eslint'),
-    // 'prettier',
-    // 'prettier/react',
-    // 'prettier/@typescript-eslint'
   ],
   plugins: [
     '@typescript-eslint',

@@ -15,8 +15,9 @@
 
     "outDir": "dist",
     "declaration": true,
+    "skipLibCheck": true
   },
   "exclude": [
-    "dist",
+    "dist"
   ]
 }

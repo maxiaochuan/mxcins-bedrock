@@ -29,6 +29,7 @@ module.exports = {
     'react/prop-types': 0,
     'react/forbid-prop-types': 0,
     'react/jsx-one-expression-per-line': 0,
+    'react/jsx-props-no-spreading': 0,
     'generator-star-spacing': 0,
     'function-paren-newline': 0,
     'import/no-unresolved': 0,
@@ -88,13 +89,15 @@ module.exports = {
 
     // Conflict with prettier
     'arrow-body-style': ['error', 'as-needed'],
-    'arrow-parens': 1,
     'object-curly-newline': 0,
     'implicit-arrow-linebreak': 0,
     'operator-linebreak': 0,
     'eslint-comments/no-unlimited-disable': 1,
     'no-param-reassign': 1,
     'space-before-function-paren': 0,
+
+    // 2020-03-24 13:10:06 for prettier
+    'arrow-parens': [1, 'as-needed'],
 
     // 2019-08-22 16:10:55 add
     'consistent-return': 0,

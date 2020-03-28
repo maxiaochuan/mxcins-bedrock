@@ -13,11 +13,11 @@
     "esModuleInterop": true,
 
 
-    "outDir": "dist",
+    "outDir": "lib",
     "declaration": true,
     "skipLibCheck": true
   },
   "exclude": [
-    "dist"
+    "lib"
   ]
 }

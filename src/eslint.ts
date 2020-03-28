@@ -1,12 +1,13 @@
 module.exports = {
   extends: [
-    'airbnb',
     'airbnb-typescript',
+    'plugin:jest/recommended',
     'prettier',
+    'prettier/@typescript-eslint',
   ],
   plugins: [
-    '@typescript-eslint',
     'eslint-comments',
+    '@typescript-eslint',
     'jest',
     'prettier',
   ],
@@ -16,7 +17,7 @@ module.exports = {
     es6: true,
     mocha: true,
     jest: true,
-    jasmine: true
+    jasmine: true,
   },
   globals: {
     Atomics: 'readonly',
@@ -45,13 +46,12 @@ module.exports = {
           '**/**.test.{ts,js,jsx,tsx}',
           '**/_mock.{ts,js,jsx,tsx}',
           '**/example/**.{ts,js,jsx,tsx}',
-          '**/examples/**.{ts,js,jsx,tsx}'
-        ]
-      }
+          '**/examples/**.{ts,js,jsx,tsx}',
+        ],
+      },
     ],
   },
   settings: {
-    "import/resolver": { node: { extensions: [".js", ".jsx", ".ts", ".tsx"] } },
-    polyfills: ["fetch", "Promise", "URL", "object-assign"]
+    polyfills: ["fetch", "Promise", "URL", "object-assign"],
   },
 };

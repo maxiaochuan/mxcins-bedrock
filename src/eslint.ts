@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'airbnb-typescript',
+    require.resolve('eslint-config-airbnb-typescript'),
     'plugin:jest/recommended',
     'prettier',
     'prettier/@typescript-eslint',

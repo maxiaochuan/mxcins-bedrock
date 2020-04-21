@@ -5,12 +5,7 @@ module.exports = {
     'prettier',
     'prettier/@typescript-eslint',
   ],
-  plugins: [
-    'eslint-comments',
-    '@typescript-eslint',
-    'jest',
-    'prettier',
-  ],
+  plugins: ['eslint-comments', '@typescript-eslint', 'jest', 'prettier'],
   env: {
     browser: true,
     node: true,
@@ -52,6 +47,6 @@ module.exports = {
     ],
   },
   settings: {
-    polyfills: ["fetch", "Promise", "URL", "object-assign"],
+    polyfills: ['fetch', 'Promise', 'URL', 'object-assign'],
   },
 };

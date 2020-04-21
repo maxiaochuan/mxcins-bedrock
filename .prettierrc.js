@@ -1,4 +1,4 @@
-const { prettier } = require("./lib");
+const { prettier } = require('./lib');
 
 module.exports = {
   ...prettier,

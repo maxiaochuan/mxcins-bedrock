@@ -3,6 +3,7 @@ module.exports = {
     require.resolve('stylelint-config-standard'),
     require.resolve('stylelint-config-css-modules'),
     require.resolve('stylelint-config-rational-order'),
+    require.resolve('stylelint-config-styled-components'),
     require.resolve('stylelint-config-prettier'),
   ],
   plugins: [
@@ -14,4 +15,5 @@ module.exports = {
     'plugin/declaration-block-no-ignored-properties': true,
     'prettier/prettier': true,
   },
+  processors: [require.resolve('stylelint-processor-styled-components')],
 };

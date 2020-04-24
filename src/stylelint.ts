@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     require.resolve('stylelint-order'),
     require.resolve('stylelint-declaration-block-no-ignored-properties'),
-    require.resolve('sytlelint-prettier'),
+    require.resolve('stylelint-prettier'),
   ],
   rules: {
     'no-descending-specificity': null,

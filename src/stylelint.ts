@@ -15,5 +15,4 @@ module.exports = {
     'plugin/declaration-block-no-ignored-properties': true,
     'prettier/prettier': true,
   },
-  processors: [require.resolve('stylelint-processor-styled-components')],
 };

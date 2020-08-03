@@ -1,11 +1,22 @@
 module.exports = {
+  plugins: [
+    '@typescript-eslint', //
+    'eslint-comments',
+    'jest',
+    'promise',
+    'unicorn',
+  ],
   extends: [
-    require.resolve('eslint-config-airbnb-typescript'),
+    'airbnb-typescript', //
+    'plugin:@typescript-eslint/recommended',
+    'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
+    'plugin:promise/recommended',
+    'plugin:unicorn/recommended',
     'prettier',
+    'prettier/react',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['eslint-comments', '@typescript-eslint', 'jest', 'prettier'],
   env: {
     browser: true,
     node: true,
@@ -14,10 +25,6 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -25,11 +32,12 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
+    project: 'tsconfig.json',
   },
   rules: {
     'prettier/prettier': 2,
     'import/no-unresolved': 0,
-    'import/order': 'warn',
+    'import/order': 1,
     'import/no-extraneous-dependencies': [
       2,
       {
@@ -45,6 +53,8 @@ module.exports = {
         ],
       },
     ],
+    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 0,
   },
   settings: {
     polyfills: ['fetch', 'Promise', 'URL', 'object-assign'],

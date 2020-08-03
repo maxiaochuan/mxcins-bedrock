@@ -10,4 +10,7 @@ module.exports = {
   bracketSpacing: true,
   jsxBracketSameLine: false,
   arrowParens: 'avoid',
+  proseWrap: 'preserve',
+  htmlWhitespaceSensitivity: 'css',
+  endOfLine: 'lf',
 };

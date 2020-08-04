@@ -60,6 +60,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     // 2020-08-04 10:57:49 感觉用处并不是很大， 而且会在fix的时候直接修改内容
     'unicorn/prevent-abbreviations': 0,
+    'eslint-comments/disable-enable-pair': 0,
   },
   settings: {
     polyfills: ['fetch', 'Promise', 'URL', 'object-assign'],

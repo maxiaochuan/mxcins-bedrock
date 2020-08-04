@@ -1,3 +1,5 @@
+const { join } = require('path');
+
 module.exports = {
   plugins: [
     '@typescript-eslint', //
@@ -33,7 +35,7 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
-    project: 'tsconfig.json',
+    project: join(process.cwd(), 'tsconfig.json'),
   },
   rules: {
     'prettier/prettier': 2,

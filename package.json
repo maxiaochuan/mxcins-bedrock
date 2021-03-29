@@ -19,7 +19,8 @@
   "scripts": {
     "build": "rm -rf lib && tsc",
     "dev": "rm -rf lib && tsc --watch",
-    "prettier": "prettier 'src/**/*.ts' --write"
+    "prettier": "prettier 'src/**/*.ts' --write",
+    "release": "np"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.19.0",

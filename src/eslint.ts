@@ -25,8 +25,6 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
     'prettier',
-    'prettier/react',
-    'prettier/@typescript-eslint',
   ],
   env: {
     browser: true,

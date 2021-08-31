@@ -86,6 +86,8 @@ module.exports = {
     ],
     'react/prop-types': 0,
     'react/jsx-props-no-spreading': 0,
+    'react/jsx-uses-react': 0,
+    'react/react-in-jsx-scope': 0,
 
     'eslint-comments/disable-enable-pair': 0,
 

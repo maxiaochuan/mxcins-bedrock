@@ -18,6 +18,8 @@ module.exports = {
     'prettier',
   ],
   extends: [
+    'airbnb',
+    'airbnb/hooks',
     'airbnb-typescript', //
     'plugin:@typescript-eslint/recommended',
     'plugin:eslint-comments/recommended',

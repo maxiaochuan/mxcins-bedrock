@@ -15,5 +15,6 @@ module.exports = {
     'no-descending-specificity': null,
     'plugin/declaration-block-no-ignored-properties': true,
     'prettier/prettier': true,
+    'value-keyworkd-case': null,
   },
 };

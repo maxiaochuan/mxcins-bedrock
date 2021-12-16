@@ -3,29 +3,31 @@ const { existsSync } = require('fs');
 
 const cwd = process.cwd();
 
-const base = join(cwd, 'tsconfig.json');
-const custom = join(cwd, 'tsconfig.eslint.json');
+const conf = join(cwd, 'tsconfig.json');
+const override = join(cwd, 'tsconfig.eslint.json');
 
-const tsconfig = existsSync(custom) ? custom : base;
+const tsconfig = existsSync(override) ? override : conf;
 
 module.exports = {
-  plugins: [
-    '@typescript-eslint', //
-    'eslint-comments',
-    'jest',
-    'promise',
-    'unicorn',
-    'prettier',
-  ],
   extends: [
+    //
     'airbnb',
     'airbnb/hooks',
-    'airbnb-typescript', //
+    'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
+    'plugin:prettier/recommended',
+  ],
+  plugins: [
+    //
+    'eslint-comments',
+    'jest',
+    'promise',
+    'unicorn',
     'prettier',
   ],
   env: {
@@ -36,13 +38,7 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
-  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2018,
-    sourceType: 'module',
     project: tsconfig,
   },
   rules: {
@@ -66,7 +62,6 @@ module.exports = {
         ],
       },
     ],
-    'prettier/prettier': 2,
     'import/no-unresolved': 0,
     'import/order': 1,
     'import/no-extraneous-dependencies': [
@@ -97,8 +92,7 @@ module.exports = {
     'unicorn/prevent-abbreviations': 0,
     'unicorn/no-null': 1,
     'unicorn/no-reduce': 0,
-  },
-  settings: {
-    polyfills: ['fetch', 'Promise', 'URL', 'object-assign'],
+    // 2021-12-17 01:03:33 enable for of
+    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
   },
 };

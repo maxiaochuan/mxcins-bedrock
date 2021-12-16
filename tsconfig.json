@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext"],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -12,12 +12,9 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
 
-
     "outDir": "lib",
     "declaration": true,
     "skipLibCheck": true
   },
-  "exclude": [
-    "lib"
-  ]
+  "exclude": ["lib"]
 }

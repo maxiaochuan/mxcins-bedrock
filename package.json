@@ -13,13 +13,17 @@
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "bin": {
+    "bedrock": "bin/bedrock.js"
+  },
   "files": [
+    "bin",
     "lib"
   ],
   "scripts": {
     "build": "rm -rf lib && tsc",
     "dev": "rm -rf lib && tsc --watch",
-    "prettier": "prettier 'src/**/*.ts' --write",
+    "prettier": "prettier '**/*.{ts,js,json}' --write",
     "release": "np --yolo"
   },
   "dependencies": {
@@ -38,7 +42,8 @@
     "eslint-plugin-react": "7.25.1",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-unicorn": "35.0.0",
-    "prettier": "2.3.2",
+    "prettier": "2.5.1",
+    "prettier-plugin-packagejson": "2.2.15",
     "stylelint": "13.13.1",
     "stylelint-config-css-modules": "2.2.0",
     "stylelint-config-prettier": "8.0.2",

@@ -1,4 +1,4 @@
-module.exports = {
+const options = {
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,
@@ -8,9 +8,12 @@ module.exports = {
   jsxSingleQuote: false,
   trailingComma: 'all',
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   arrowParens: 'avoid',
   proseWrap: 'preserve',
   htmlWhitespaceSensitivity: 'css',
   endOfLine: 'lf',
+  plugins: [require.resolve('prettier-plugin-packagejson')],
 };
+
+module.exports = options;

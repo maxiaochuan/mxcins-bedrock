@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const prettier = require('prettier');
 const conf = require('../lib/prettier');
+const sort = require('sort-package-json');
 const argv = process.argv.slice(2);
 
 const cwd = process.cwd();
@@ -19,7 +20,8 @@ if (argv[0] === 'eject') {
     project.devDependencies[name] = pkg.dependencies[name];
   }
 
-  const content = prettier.format(JSON.stringify(project), {
+  const content = prettier.format(sort(JSON.stringify(project)), {
+    parser: 'json-stringify',
     ...conf,
   });
   fs.writeFileSync(path.join(cwd, 'package.json'), content, 'utf-8');

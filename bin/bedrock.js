@@ -9,15 +9,15 @@ const argv = process.argv.slice(2);
 
 const cwd = process.cwd();
 
-const names = ['prettier', 'eslint', 'stylelint'];
+const names = ['prettier', 'eslint', 'stylelint', 'sort-package-json'];
 
-if (argv[0] === 'eject') {
+if (argv[0] === 'update' && argv[1] === 'resolutions') {
   const pkg = require('../package.json');
   const project = require(path.join(cwd, 'package.json'));
 
-  project.devDependencies = project.devDependencies || {};
+  project.resolutions = project.resolutions || {};
   for (const name of names) {
-    project.devDependencies[name] = pkg.dependencies[name];
+    project.resolutions[name] = pkg.dependencies[name];
   }
 
   const content = prettier.format(sort(JSON.stringify(project)), {
@@ -26,5 +26,5 @@ if (argv[0] === 'eject') {
   });
   fs.writeFileSync(path.join(cwd, 'package.json'), content, 'utf-8');
 
-  console.log('[@mxcins/bedrock]: eject success!');
+  console.log('[@mxcins/bedrock]: update resolutions success!');
 }

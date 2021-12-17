@@ -1,4 +1,5 @@
 module.exports = {
+  processors: [require.resolve('stylelint-processor-styled-components')],
   extends: [
     require.resolve('stylelint-config-standard'),
     require.resolve('stylelint-config-css-modules'),
